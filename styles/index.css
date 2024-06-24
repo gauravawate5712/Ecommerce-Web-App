@@ -1,0 +1,154 @@
+.filters {
+	position: fixed;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.focused > .textbox-content {
+	border: var(--b-2) solid var(--secondary-color);
+	border-radius: var(--br-1);
+	outline: none;
+}
+
+.filter-max-width {
+	max-width: 30rem;
+}
+
+.focused > .textbox-label {
+	background: var(--secondary-background-color);
+}
+
+.address-form-modal-container {
+	width: min(100%, max-content);
+	height: auto;
+	background: var(--secondary-background-color);
+}
+.page-selected {
+	background-color: var(--cta-color);
+	color: var(--tertiary-color);
+	border-color: var(--cta-color);
+}
+.horizontal-tabs-content {
+	display: block;
+}
+
+.badge-text {
+	position: absolute;
+	background: var(--cta-color);
+	color: var(--tertiary-color);
+	font-weight: bold;
+	font-size: 0.9rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+.cart-badge-text {
+	top: 1rem;
+	right: 5.5rem;
+}
+
+.wishlist-badge-text {
+	top: 1rem;
+	right: 13.5rem;
+}
+.header {
+	z-index: 2;
+}
+.modal {
+	padding: var(--p-0);
+	z-index: 13;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+}
+
+.modal-background {
+	width: 100%;
+	height: 100vh;
+	grid-column: 1/13;
+	background-color: var(--tertiary-color);
+	opacity: 0.5;
+	z-index: 13;
+}
+
+.modal-content {
+	position: absolute;
+	z-index: 13;
+	background-color: var(--secondary-background-color);
+	/* width: 60rem; */
+}
+
+.grid-3-rows .modal {
+	grid-column: 1/4;
+	grid-row: 1/4;
+}
+
+.address-form-modal-container .input-container {
+	width: 100%;
+}
+.address-form-modal-container .textbox-label {
+	font-size: 1.4rem;
+}
+.selected-outline-btn {
+	background: var(--primary-color);
+	border-color: var(--cta-color);
+	color: var(--cta-color);
+}
+
+.featured-brand-container {
+	width: 25rem;
+	height: 28rem;
+}
+.featured-brand-section {
+	width: 25rem;
+	height: 20rem;
+}
+.featured-brand-image {
+	width: 20rem;
+}
+
+.vertical-tabs-content {
+	display: block;
+}
+
+.disabled-btn {
+	background-color: grey;
+	border: none;
+}
+
+.disabled-btn:hover {
+	background-color: grey;
+	color: var(--tertiary-color);
+	border: none;
+}
+@media screen and (max-width: 1180px) {
+	.grid-3-rows .header .header-nav-icons {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.grid-3-rows .header .header-navigation {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.brand-logo {
+		width: 5rem;
+		height: 5rem;
+	}
+	.brand-name {
+		left: -2rem;
+	}
+}
+
+.filter-chip-selected {
+	color: var(--cta-color);
+	background-color: var(--tertiary-color);
+}
+
+.primary-btn {
+	color: var(--tertiary-color);
+}
